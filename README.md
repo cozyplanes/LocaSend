@@ -35,7 +35,7 @@ Example code is :
 When you convert a string to a double, you should make the following changes.   
 `String LONGITUDE_HERE="";`
 `String LATITUDE_HERE="";`      
-
+and   
 `LONGITUDE_HERE= String.valueOf(location.getLongitude());`
 `LATITUDE_HERE= String.valueOf(location.getLatitude());`  
 You can find more information [here](http://stackoverflow.com/questions/43674075/set-text-retreived-by-location-manager-inside-sharingintent-extra/).
