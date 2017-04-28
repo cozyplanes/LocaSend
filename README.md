@@ -1,6 +1,7 @@
-LocaSend===========
+LocaSend
+===========
 ---
-*Share your location instantly*
+*Share your location instantly*     
 This is a simple android app that shows the current location (longitude, latitude). Then, with a button click, you can share your current location using other apps. 
 ---
 **SharingIntent**    
@@ -10,7 +11,7 @@ This is a simple android app that shows the current location (longitude, latitud
 `sharingIntent.setType("text/plain");`
 3. Then you set the Extra flags. Something like this :    
 `sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, YOUR_TEXT_HERE);
-`4. Lastly, you should start the share action chooser.    
+4. Lastly, you should start the share action chooser.    
 `startActivity(Intent.createChooser(sharingIntent, "YOUR_CUSTOM_TITLE"));`
 
 ---
@@ -27,9 +28,9 @@ This is a simple android app that shows the current location (longitude, latitud
 ---
 **Some code in the project that you may find it useful**  
 When you convert a string to a double, you should make the following changes.   
-`String LONGITUDE_HERE="";``String LATITUDE_HERE="";`      
+`String LONGITUDE_HERE="";` `String LATITUDE_HERE="";`      
 and   
-`LONGITUDE_HERE= String.valueOf(location.getLongitude());``LATITUDE_HERE= String.valueOf(location.getLatitude());`  
+`LONGITUDE_HERE= String.valueOf(location.getLongitude());` `LATITUDE_HERE= String.valueOf(location.getLatitude());`  
 You can find more information [here](http://stackoverflow.com/questions/43674075/set-text-retreived-by-location-manager-inside-sharingintent-extra/).
 
 ---
