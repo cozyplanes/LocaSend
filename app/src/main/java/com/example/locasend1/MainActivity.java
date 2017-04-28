@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener
                 sharingIntent.setType("text/plain");
                 //sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, LONGITUDE_HERE); // longitude.setText(" " + location.getLongitude());
                 //sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, LATITUDE_HERE); //  latitude.setText(" " + location.getLatitude());
-                if(LONGITUDE_HERE!=null&&LATITUDE_HERE!=null) // not needed but just for better performance without issues in some devices
+                if (LONGITUDE_HERE != null && LATITUDE_HERE != null) // not needed but just for better performance without issues in some devices
                 {
                     sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, LONGITUDE_HERE);
                     sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, LATITUDE_HERE);
