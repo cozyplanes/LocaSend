@@ -1,0 +1,3 @@
+1. add functionality to share two lines at the same time (currently only latitude is shared.)
+2. add functionality to only display until the third digit after decimal ex 0.123
+3. add functionality for the user to refresh manually (in some devices automatic refresh does not work)
