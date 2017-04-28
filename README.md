@@ -3,7 +3,7 @@ LocaSend
 ---
 *Share your location instantly*
 
-This is a simple android app that shows the current location (longitude, latitude). Then, with a button click, you can share your current location using other apps. Please check the LICENSE for license information.
+This is a simple android app that shows the current location (longitude, latitude). Then, with a button click, you can share your current location using other apps. 
 
 ---
 
@@ -43,4 +43,20 @@ You can find more information [here](http://stackoverflow.com/questions/43674075
 **Permissions Dealing from 6.0**  
 *From 6.0, you should get permission check by users. You must add this line in the proper place if your app targets 6.0, too.*  
 *`if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) { return; }`*
+
+---
+**License** (You can find the same one under the file name LICENSE)
+    Copyright 2017 cozyplanes
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
 
