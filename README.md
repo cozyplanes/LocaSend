@@ -20,21 +20,22 @@ This is a simple android app that shows the current location (longitude, latitud
 ---
 **Location Manager and Criteria**
 1. First you must declare permission to access `location` and `internet`.   
-`<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+`<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />    
 <uses-permission android:name="android.permission.INTERNET" />`
 2. Next, you should get `LOCATION_SERVICE` from `LocationManger` and make new `Criteria` variable.   
-`locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+`locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);    
 Criteria criteria = new Criteria();`
 3. Request location updates. Parameters are `String provider, long minTime, float minDistance, LocationListener listener`.
 Example code is :   
-`Location location = locationManager.getLastKnownLocation(mprovider);
+`Location location = locationManager.getLastKnownLocation(mprovider);    
 locationManager.requestLocationUpdates(mprovider, 15000, 1, this);`
 
 ---
 **Some code in the project that you may find it useful**  
 When you convert a string to a double, you should make the following changes.   
 `String LONGITUDE_HERE="";`
-`String LATITUDE_HERE="";`
+`String LATITUDE_HERE="";`      
+
 `LONGITUDE_HERE= String.valueOf(location.getLongitude());`
 `LATITUDE_HERE= String.valueOf(location.getLatitude());`  
 You can find more information [here](http://stackoverflow.com/questions/43674075/set-text-retreived-by-location-manager-inside-sharingintent-extra/).
