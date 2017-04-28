@@ -10,11 +10,11 @@ This is a simple android app that shows the current location (longitude, latitud
 **SharingIntent**
 1. You first tell the system what kind of intent you will use.   
 `Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);`
-2. Next you set the type.
+2. Next you set the type.    
 `sharingIntent.setType("text/plain");`
-3. Then you set the Extra flags. Something like this :
+3. Then you set the Extra flags. Something like this :    
 `sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, YOUR_TEXT_HERE);`
-4. Lastly, you should start the share action chooser.
+4. Lastly, you should start the share action chooser.    
 `startActivity(Intent.createChooser(sharingIntent, "YOUR_CUSTOM_TITLE"));`
 
 ---
