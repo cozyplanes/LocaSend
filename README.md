@@ -20,15 +20,15 @@ This is a simple android app that shows the current location (longitude, latitud
 ---
 **Location Manager and Criteria**
 1. First you must declare permission to access `location` and `internet`.   
-`<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />    
-<uses-permission android:name="android.permission.INTERNET" />`
+`<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />`       
+`<uses-permission android:name="android.permission.INTERNET" />`
 2. Next, you should get `LOCATION_SERVICE` from `LocationManger` and make new `Criteria` variable.   
-`locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);    
-Criteria criteria = new Criteria();`
+`locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE); `   
+`Criteria criteria = new Criteria();`
 3. Request location updates. Parameters are `String provider, long minTime, float minDistance, LocationListener listener`.
 Example code is :   
-`Location location = locationManager.getLastKnownLocation(mprovider);    
-locationManager.requestLocationUpdates(mprovider, 15000, 1, this);`
+`Location location = locationManager.getLastKnownLocation(mprovider);`       
+`locationManager.requestLocationUpdates(mprovider, 15000, 1, this);`
 
 ---
 **Some code in the project that you may find it useful**  
