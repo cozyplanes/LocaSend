@@ -46,7 +46,8 @@ You can find more information [here](http://stackoverflow.com/questions/43674075
 
 ---
 **License** (You can find the same one under the file name LICENSE)
-    Copyright 2017 cozyplanes
+        
+        Copyright 2017 cozyplanes
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
